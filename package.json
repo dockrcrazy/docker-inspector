@@ -1,0 +1,17 @@
+{
+  "name": "docker-inspector",
+  "version": "1.0.0",
+  "description": "Command line tool to get additional commands on a server running services via docker-compose",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": "git@github.com:dockrcrazy/docker-inspector.git",
+  "dependencies": {
+    "colors": "^1.3.0",
+    "command-router": "^1.0.1",
+    "dockerode": "^2.5.5"
+  }
+}

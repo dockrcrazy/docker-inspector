@@ -1,0 +1,7 @@
+version: '2.1'
+services:
+  docker-inspector:
+    image: dockrcrazy/docker-inspector
+    build:
+      context: .
+      dockerfile: Dockerfile
