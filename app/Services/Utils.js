@@ -27,7 +27,7 @@ function enhanceContainer(container) {
     };
 
     container.hasHealthCheckMark = function () {
-        return typeof this.Labels[healthCheckBaseLabel+'.enabled'] !== 'undefined' && this.Labels['net.trsb.healthcheck.enabled'] !== '';
+        return typeof this.Labels[healthCheckBaseLabel+'.enabled'] !== 'undefined';
     };
 
     return container;
