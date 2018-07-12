@@ -50,7 +50,12 @@ There is several environment variable available :
 
 - `DI_HEALTHCHECK_BASE_LABEL` : Set a label to every containers you want to check health.  
   For example, set `com.yourcompany.healthcheck` in `DI_HEALTHCHECK_BASE_LABEL` then affect label `com.yourcompany.healthcheck.enabled` on a container.
-  
+
+- `DI_SLACK_WEBHOOK` 
+   Add Slack integration for some commands
+- `DI_SLACK_CHANNEL`
+- `DI_SLACK_USERNAME`
+
 ## Commands
 
 Available commands :
@@ -59,4 +64,7 @@ Available commands :
    List every compose projects are running 
 - `docker-inspector healthcheck`  
    Put the label `com.docker-inspector.healthcheck` on the container you want to check.  
-   If one container is not running, it will display it.
+   If one container is not running, it will display it.  
+   *options :*  
+   - `--slack`  
+     Send a message to slack if a container "healthchecked" is not running.
