@@ -22,11 +22,11 @@ module.exports = {
                 let project = projects[projectIndex];
                 for(let container of project.containers){
                     if(container.hasHealthCheckMark() && !container.isRunning()){
-                        if(!filteredProjects[project.getComposeProjectName()]){
-                            filteredProjects[project.getComposeProjectName()] = project;
-                            filteredProjects[project.getComposeProjectName()].containers = [];
+                        if(!filteredProjects[project.name]){
+                            filteredProjects[project.name] = project;
+                            filteredProjects[project.name].containers = [];
                         }
-                        filteredProjects[project.getComposeProjectName()].containers.push(container);
+                        filteredProjects[project.name].containers.push(container);
                     }
                 }
             }
